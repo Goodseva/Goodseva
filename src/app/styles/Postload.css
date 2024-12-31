@@ -1,0 +1,66 @@
+#main-head {
+  font-size: 20px;
+  font-weight: 600;
+}
+#upload-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+#file-upload-btn {
+  border: 1px solid white;
+  width: fit-content;
+  padding: 10;
+  border-radius: 30;
+  background-color: #7f1126;
+  text-align: center;
+}
+#truck-type1 {
+  font-size: 14px;
+  font-weight: 600;
+}
+#upload-block {
+  width: 100%;
+  height: auto;
+  padding: 15;
+  border: 1px dashed #b0b0b0;
+  border-radius: 5px;
+}
+#drag-text1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+#drag-text2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #848080;
+}
+#selecting-trucks-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#selecting-trucks1 img {
+  height: 50;
+  transform: scaleX(-1);
+  margin-bottom:10;
+  display: block;
+  margin-left: 20;
+}
+#selecting-trucks1 {
+  width: 165;
+  height: 92;
+  border: 1px solid rgba(196, 196, 196, 1);
+  border-radius: 8;
+  padding: 10;
+}
+#open-truck-div {
+  margin-top: -25px;
+}
+#open-truck-text {
+  font-size: 12px;
+  font-weight: 600;
+}
+#truck-properities {
+  font-size: 9px;
+  font-weight: 600;
+}

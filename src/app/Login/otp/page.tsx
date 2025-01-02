@@ -1,6 +1,6 @@
 "use client";
 import "../../styles/OtpPage.css";
-import { PhoneFilled } from "@ant-design/icons";
+
 import {
   Button,
   Col,
@@ -13,7 +13,10 @@ import {
 } from "antd";
 
 import type { GetProps } from "antd";
+import Image from "next/image";
 import Link from "next/link";
+import googleicon from "../../../public/google.png";
+import fbicon from "../../../public/fb.png";
 
 type OTPProps = GetProps<typeof Input.OTP>;
 
@@ -160,16 +163,16 @@ export default function OtpPage() {
                 <span style={{ color: "#525252" }}>With Others</span>
               </Divider>
               <Flex justify="center" gap={30}>
-                <img
+                <Image
                   width="48"
                   height="48"
-                  src="https://img.icons8.com/color/48/google-logo.png"
+                  src={googleicon}
                   alt="google-logo"
                 />
-                <img
+                <Image
                   width="48"
                   height="48"
-                  src="https://img.icons8.com/color/48/facebook.png"
+                  src={fbicon}
                   alt="facebook"
                 />
               </Flex>

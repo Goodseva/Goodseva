@@ -11,8 +11,11 @@ import {
   Space,
   Typography,
 } from "antd";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import googleicon from "../../../public/google.png";
+import fbicon from "../../../public/fb.png";
 
 export default function RegisterPage() {
   const [mobileNo, setMobileNo] = useState("");
@@ -123,7 +126,7 @@ export default function RegisterPage() {
                 id="mobile-input"
                 type="number"
                 value={mobileNo}
-                onChange={(e): any => {
+                onChange={(e) => {
                   setMobileNo(e.target.value);
                 }}
               />
@@ -149,16 +152,16 @@ export default function RegisterPage() {
                 <span style={{ color: "#525252" }}>With Others</span>
               </Divider>
               <Flex justify="center" gap={30}>
-                <img
+                <Image
                   width="48"
                   height="48"
-                  src="https://img.icons8.com/color/48/google-logo.png"
+                  src={googleicon}
                   alt="google-logo"
                 />
-                <img
+                <Image
                   width="48"
                   height="48"
-                  src="https://img.icons8.com/color/48/facebook.png"
+                  src={fbicon}
                   alt="facebook"
                 />
               </Flex>

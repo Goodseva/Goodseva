@@ -1,19 +1,8 @@
 "use client";
 import "../../../../../../../styles/Step1.css";
 
-import {
-  Button,
-  Col,
-  Divider,
-  Flex,
-  Form,
-  Input,
-  Row,
-  Space,
-  Typography,
-} from "antd";
+import { Button, Col, Flex, Form, Input, Row, Space, Typography } from "antd";
 
-import type { GetProps } from "antd";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 
@@ -23,7 +12,6 @@ export default function Step3() {
   const [CINN0, setCIN] = useState("");
   const [GST, setGST] = useState("");
 
-  //console.log(typeof Number(CINN0));
   return (
     <div className="main-register">
       <Row>

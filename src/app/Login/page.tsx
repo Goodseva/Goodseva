@@ -1,4 +1,5 @@
 "use client";
+
 import "../styles/LoginPage.css";
 import { MobileOutlined } from "@ant-design/icons";
 import {
@@ -11,7 +12,11 @@ import {
   Space,
   Typography,
 } from "antd";
+
+import Image from "next/image";
 import Link from "next/link";
+import googleicon from "../../../public/google.png";
+import fbicon from "../../../public/fb.png";
 
 export default function LoginPage() {
   return (
@@ -126,18 +131,13 @@ export default function LoginPage() {
                 <span style={{ color: "#525252" }}>With Others</span>
               </Divider>
               <Flex justify="center" gap={30}>
-                <img
+                <Image
                   width="48"
                   height="48"
-                  src="https://img.icons8.com/color/48/google-logo.png"
+                  src={googleicon}
                   alt="google-logo"
                 />
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/facebook.png"
-                  alt="facebook"
-                />
+                <Image width="48" height="48" src={fbicon} alt="facebook" />
               </Flex>
             </div>
           </Col>

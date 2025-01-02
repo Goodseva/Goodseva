@@ -26,7 +26,7 @@ export default function Lp2() {
       >
         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           <Title id="main-title-Lp2">
-            Why We're Your Top Choice for Loads Transport
+            Why We&apos;re Your Top Choice for Loads Transport
           </Title>
 
           <div>

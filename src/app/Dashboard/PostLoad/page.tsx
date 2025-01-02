@@ -1,12 +1,29 @@
 "use client";
-import { Button, Col, Flex, Form, Input, Row, Space, Typography } from "antd";
+import {
+ 
+  Col,
+  DatePicker,
+  Flex,
+  Form,
+  Input,
+  Row,
+  Space,
+  Typography,
+} from "antd";
 
 import "../../styles/Postload.css";
 
 import Lorryimg1 from "../../../../public/Lp3.png";
-import Lorryimg2 from "../../../../public/Lp1.png";
-import Lorryimg3 from "../../../../public/Lp31.png";
+
 import Image from "next/image";
+
+import { Radio } from "antd";
+
+const options = [
+  { label: "spot Price", value: "spot Price" },
+  { label: "Your Price", value: "Your Price" },
+  { label: "Smart Bid", value: "Smart Bid" },
+];
 
 export default function PostLoad() {
   return (
@@ -207,7 +224,37 @@ export default function PostLoad() {
           </Flex>
         </Col>
       </Row>
-      
+
+      <Row>
+        <Col lg={10}>
+          <Flex gap={40}>
+            <Flex vertical gap={5} justify="space-evenly">
+              <Typography.Text>Weight</Typography.Text>
+              <Input suffix="Tones" />
+            </Flex>
+            <Flex vertical gap={5}>
+              <Typography.Text>Select Date</Typography.Text>
+              <DatePicker renderExtraFooter={() => "extra footer"} showTime />
+            </Flex>
+          </Flex>
+        </Col>
+        <Col lg={1}></Col>
+        <Col lg={13}>
+          <Flex vertical gap={5}>
+            <Typography.Text>Price Type</Typography.Text>
+            <Radio.Group
+              options={options}
+              defaultValue="Pear"
+              optionType="button"
+              style={{
+                borderColor: "rgba(255, 255, 255, 1)",
+                color: "rgba(127, 17, 38, 1)",
+              }}
+             
+            />
+          </Flex>
+        </Col>
+      </Row>
     </Flex>
   );
 }

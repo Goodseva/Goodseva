@@ -1,4 +1,4 @@
-import { Col, Flex, Row, Typography } from "antd";
+import { Col,  Row, Typography } from "antd";
 import Image from "next/image";
 import lorry from "../../../../public/Lorry1.png";
 import Title from "antd/es/typography/Title";

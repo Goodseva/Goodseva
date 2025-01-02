@@ -1,6 +1,6 @@
 import { Button, Col, Row } from "antd";
 import Title from "antd/es/typography/Title";
-import { url } from "inspector";
+
 
 export default function Lp5() {
   return (

@@ -1,13 +1,13 @@
 "use client";
-import { Col, Flex, Input, Row, Space, Typography } from "antd";
-import Title from "antd/es/typography/Title";
+import { Col, Flex, Input, Row, Typography } from "antd";
+
 import "../styles/Layout.css";
 import React, { useState } from "react";
-import { icons } from "antd/es/image/PreviewGroup";
+
 import Link from "next/link";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  const [selected, setSelected] = useState<String | null>(null);
+  const [selected, setSelected] = useState<string | null>(null);
   const navbarData1 = [
     {
       link: "/Dashboard/",
@@ -482,7 +482,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     },
   ];
 
-  const handleClick = (index: String) => {
+  const handleClick = (index: string) => {
     setSelected(index);
   };
 

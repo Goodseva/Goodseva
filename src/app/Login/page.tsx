@@ -15,8 +15,7 @@ import {
 
 import Image from "next/image";
 import Link from "next/link";
-import googleicon from "../../../public/google.png";
-import fbicon from "../../../public/fb.png";
+
 
 export default function LoginPage() {
   return (
@@ -134,10 +133,10 @@ export default function LoginPage() {
                 <Image
                   width="48"
                   height="48"
-                  src={googleicon}
+                  src="/google.png"
                   alt="google-logo"
                 />
-                <Image width="48" height="48" src={fbicon} alt="facebook" />
+                <Image width="48" height="48" src="/fb.png" alt="facebook" />
               </Flex>
             </div>
           </Col>

@@ -1,16 +1,17 @@
 "use client";
+import dynamic from "next/dynamic";
 
-import FooterLp from "./components/LandingPage/FooterLp";
-import Lp2 from "./components/LandingPage/Lp2";
-import Lp3 from "./components/LandingPage/Lp3";
-import Lp4 from "./components/LandingPage/Lp4";
-import Lp5 from "./components/LandingPage/Lp5";
-import Lp6 from "./components/LandingPage/Lp6";
+const FooterLp = dynamic(() => import("./components/LandingPage/FooterLp"));
+const Landingpage2 = dynamic(() => import("./components/LandingPage/Lp2"));
+const Lp3 = dynamic(() => import("./components/LandingPage/Lp3"));
+const Lp4 = dynamic(() => import("./components/LandingPage/Lp4"));
+const Lp5 = dynamic(() => import("./components/LandingPage/Lp5"));
+const Lp6 = dynamic(() => import("./components/LandingPage/Lp6"));
 
 export default function Home() {
   return (
     <div>
-      <Lp2 />
+      <Landingpage2 />
       <Lp3 />
       <Lp4 />
       <Lp5 />

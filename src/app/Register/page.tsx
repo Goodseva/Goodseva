@@ -157,12 +157,14 @@ export default function RegisterPage() {
                   height="48"
                   src={googleicon}
                   alt="google-logo"
+                  loading="lazy"
                 />
                 <Image
                   width="48"
                   height="48"
                   src={fbicon}
                   alt="facebook"
+                  loading="lazy"
                 />
               </Flex>
             </div>

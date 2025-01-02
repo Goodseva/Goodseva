@@ -1,8 +1,9 @@
 "use client";
 import {
- 
+  Button,
   Col,
   DatePicker,
+  Divider,
   Flex,
   Form,
   Input,
@@ -18,12 +19,6 @@ import Lorryimg1 from "../../../../public/Lp3.png";
 import Image from "next/image";
 
 import { Radio } from "antd";
-
-const options = [
-  { label: "spot Price", value: "spot Price" },
-  { label: "Your Price", value: "Your Price" },
-  { label: "Smart Bid", value: "Smart Bid" },
-];
 
 export default function PostLoad() {
   return (
@@ -230,28 +225,87 @@ export default function PostLoad() {
           <Flex gap={40}>
             <Flex vertical gap={5} justify="space-evenly">
               <Typography.Text>Weight</Typography.Text>
-              <Input suffix="Tones" />
+              <Input suffix="Tones" size="large" />
             </Flex>
             <Flex vertical gap={5}>
               <Typography.Text>Select Date</Typography.Text>
-              <DatePicker renderExtraFooter={() => "extra footer"} showTime />
+              <DatePicker
+                renderExtraFooter={() => "extra footer"}
+                showTime
+                size="large"
+              />
             </Flex>
           </Flex>
         </Col>
         <Col lg={1}></Col>
         <Col lg={13}>
-          <Flex vertical gap={5}>
+          <Flex vertical gap={10}>
             <Typography.Text>Price Type</Typography.Text>
-            <Radio.Group
-              options={options}
-              defaultValue="Pear"
-              optionType="button"
-              style={{
-                borderColor: "rgba(255, 255, 255, 1)",
-                color: "rgba(127, 17, 38, 1)",
-              }}
-             
-            />
+            <Radio.Group size="large" className="radio-grp">
+              <Radio.Button value="a" id="radio-btn">
+                SpotPrice
+              </Radio.Button>
+              <Radio.Button value="b" id="radio-btn">
+                Your Price
+              </Radio.Button>
+              <Radio.Button value="c" id="radio-btn">
+                Smart Bid
+              </Radio.Button>
+            </Radio.Group>
+            <Flex gap={40}>
+              <Flex vertical gap={5}>
+                <Typography.Text>No of Truck</Typography.Text>
+                <Input size="large" type="number" />
+              </Flex>
+              <Flex vertical gap={5}>
+                <Typography.Text>Frequency Once in</Typography.Text>
+                <Input suffix="Tones" size="large" />
+              </Flex>
+            </Flex>
+          </Flex>
+        </Col>
+      </Row>
+
+      <Row>
+        <Flex vertical gap={10} className="materials">
+          <Flex>
+            <Col lg={24}>
+              <Typography.Text>Goods Type - Truck</Typography.Text>
+            </Col>
+          </Flex>
+          <Flex gap={5}>
+            <Col lg={12}>
+              <Flex wrap gap={15}>
+                {new Array(9).fill(1).map((e,index) => {
+                  return (
+                    <Button className="materials-btn" key={index}>
+                      <Flex vertical gap={1}>
+                        <Typography.Text id="materials-btn-text-main">
+                          Comedities - Lorry
+                        </Typography.Text>
+                        <Typography.Text id="materials-btn-text">
+                          Ex: Grains, Coal, Ore, Cement.
+                        </Typography.Text>
+                      </Flex>
+                    </Button>
+                  );
+                })}
+              </Flex>
+            </Col>
+          </Flex>
+        </Flex>
+        <Divider style={{ borderColor: "#C4C4C4" }} />
+      </Row>
+      <Row>
+        <Col lg={18}></Col>
+        <Col lg={6}>
+          <Flex gap={25}>
+            <Button size="large" id="saveAsDraftBtn">
+              Save as Draft
+            </Button>
+            <Button size="large"  id="postBtn">
+              Post
+            </Button>
           </Flex>
         </Col>
       </Row>

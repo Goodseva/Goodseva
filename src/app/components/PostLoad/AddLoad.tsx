@@ -274,7 +274,7 @@ export default function AddLoad() {
             </Col>
           </Flex>
           <Flex gap={5}>
-            <Col lg={12}>
+            <Col lg={12} sm={24} xs={24}>
               <Flex wrap gap={15}>
                 {new Array(9).fill(1).map((e, index) => {
                   return (

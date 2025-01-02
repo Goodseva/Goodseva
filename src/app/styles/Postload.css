@@ -9,6 +9,7 @@
 #file-upload-btn {
   border: 1px solid white;
   width: fit-content;
+  height: fit-content;
   padding: 10;
   border-radius: 30;
   background-color: #7f1126;

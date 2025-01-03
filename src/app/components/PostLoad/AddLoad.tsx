@@ -21,6 +21,44 @@ import Image from "next/image";
 import { Radio } from "antd";
 
 export default function AddLoad() {
+  const Goods_Types = [
+    {
+      title: "Comedities - Lorry",
+      example: "Ex: Grains, Coal, Ore, Cement.",
+    },
+    {
+      title: "Container",
+      example: "Ex: Electronics, Clothing, Foo...",
+    },
+    {
+      title: "Liquid - Tanker",
+      example: "Ex: Crude Oil, Chemicals, LNG",
+    },
+    {
+      title: "Gas- Tanker",
+      example: "Ex: Natural Gas, Propane, Hy...",
+    },
+    {
+      title: "Roll-on/Roll-off - Flatbed",
+      example: "Ex: Cars, trucks, heavy mach...",
+    },
+    {
+      title: "Project- Flatbed",
+      example: "Ex: Large, Heavy, Complex Eq...",
+    },
+    {
+      title: "Hazardous - SP Truck",
+      example: "Ex: Chemicals, Explosives, Ra...",
+    },
+    {
+      title: "A/C Reefer",
+      example: "Ex: Fresh Produce, Meats, Da...",
+    },
+    {
+      title: "Box Truck",
+      example: "Ex: A Mix of Goods.",
+    },
+  ];
   return (
     <Flex vertical gap={15}>
       <Flex vertical gap={10}>
@@ -276,15 +314,15 @@ export default function AddLoad() {
           <Flex gap={5}>
             <Col lg={12} sm={24} xs={24}>
               <Flex wrap gap={15}>
-                {new Array(9).fill(1).map((e, index) => {
+                {Goods_Types.map((e, index) => {
                   return (
                     <Button className="materials-btn" key={index}>
                       <Flex vertical gap={1}>
                         <Typography.Text id="materials-btn-text-main">
-                          Comedities - Lorry
+                          {e.title}
                         </Typography.Text>
                         <Typography.Text id="materials-btn-text">
-                          Ex: Grains, Coal, Ore, Cement.
+                          {e.example}
                         </Typography.Text>
                       </Flex>
                     </Button>

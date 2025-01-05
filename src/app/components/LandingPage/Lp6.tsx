@@ -10,7 +10,7 @@ export default function Lp6() {
       <Row style={{ display: "flex" }} className="main-Lp6">
         <Col sm={0} xs={0} lg={2}></Col>
         <Col sm={24} xs={24} lg={8}>
-          <Flex vertical gap={10}>
+          <Flex vertical gap={10} >
             <Image src={worker} alt="worker" className="Lp6-Img"></Image>
             <Flex vertical>
               <Title level={4} style={{ fontSize: 32, fontWeight: 400 }}>
@@ -31,7 +31,7 @@ export default function Lp6() {
         </Col>
         <Col sm={0} xs={0} lg={1}></Col>
         <Col sm={24} xs={24} lg={11}>
-          <Flex vertical>
+          <Flex vertical wrap>
             <Flex>
               <Title level={2} id="main-head-Lp6">
                 The <span id="offeringTxt">Step-by-Step</span> Guide to Your

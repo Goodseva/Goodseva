@@ -1,7 +1,11 @@
+
+
+import LoadsView from "@/app/components/Loads/LoadsView";
+
 export default function Loads() {
   return (
     <div>
-      <h1>Loads</h1>
+      <LoadsView />
     </div>
   );
 }

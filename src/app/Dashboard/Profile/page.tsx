@@ -1,6 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
-import React, { ReactNode } from "react";
+import React from "react";
 import { Col, Row, Tabs, Typography } from "antd";
 import type { TabsProps } from "antd";
 
@@ -43,12 +43,7 @@ export default function Profile() {
 
       <Row>
         <Col lg={20}>
-          <Tabs
-            defaultActiveKey="1"
-            items={items}
-            onChange={onChange}
-            
-          />
+          <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
         </Col>
       </Row>
     </div>

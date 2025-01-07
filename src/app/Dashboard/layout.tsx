@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
+ 
   const [selected, setSelected] = useState<string | null>(null);
   const navbarData1 = [
     {
@@ -658,7 +659,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Row>
             <Col
               lg={24}
-              style={{ width: "100%", height: "130vh", padding: 25 }}
+              style={{ width: "100%", height: "auto"}}
             >
               {children}
             </Col>

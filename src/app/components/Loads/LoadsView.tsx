@@ -68,7 +68,7 @@ export default function LoadsView() {
       <Row>
         <Col lg={6} md={24} sm={24}>
           <Flex vertical gap={16} style={{ padding: 25 }}>
-            <Flex  vertical gap={8}>
+            <Flex vertical gap={8}>
               <Typography.Text className={styles.LoadDetails}>
                 Load Details
               </Typography.Text>
@@ -224,7 +224,9 @@ export default function LoadsView() {
                 backgroundColor: "white",
                 width: "96%",
                 padding: 20,
-                margin: 20,
+                margin:20,
+                border: "1px solid #FFFFFF",
+                borderRadius: 8,
               }}
             >
               <Driver />

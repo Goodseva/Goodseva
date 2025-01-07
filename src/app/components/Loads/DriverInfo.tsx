@@ -17,28 +17,24 @@ const items: TabsProps["items"] = [
 ];
 
 export default function Driver() {
-
-
   return (
-    <Flex style={{ border: "1px solid #FFFFFF", borderRadius: 20 }}>
-      <Flex style={{ width: "100%" }}>
-        <Tabs
-          defaultActiveKey="1"
-          items={items}
-          onChange={onChange}
-          style={{ width: "100%" }}
-        />
-      </Flex>
+    <Flex>
+      <Tabs
+        defaultActiveKey="1"
+        items={items}
+        onChange={onChange}
+        style={{ width: "100%" }}
+      />
     </Flex>
   );
 }
 
 function DriverInfo() {
-      const driverDetails = {
-        IDNumber: "7456-123-234",
-        DriversLicense: "7456-123-234",
-        InsuranceNo: "7456-1234-2345",
-      };
+  const driverDetails = {
+    IDNumber: "7456-123-234",
+    DriversLicense: "7456-123-234",
+    InsuranceNo: "7456-1234-2345",
+  };
   return (
     <Flex style={{ width: "100%" }} vertical gap={20}>
       <Flex gap={20} style={{ width: "100%" }}>

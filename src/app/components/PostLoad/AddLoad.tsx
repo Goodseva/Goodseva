@@ -60,7 +60,7 @@ export default function AddLoad() {
     },
   ];
   return (
-    <Flex vertical gap={15}>
+    <Flex vertical gap={15} style={{padding:25}}>
       <Flex vertical gap={10}>
         <Typography.Text id="main-head">Post a Load</Typography.Text>
         <Typography.Text id="upload-text">

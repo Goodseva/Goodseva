@@ -659,7 +659,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Row>
             <Col
               lg={24}
-              style={{ width: "100%", height: "auto", padding: 25 }}
+              style={{ width: "100%", height: "auto"}}
             >
               {children}
             </Col>

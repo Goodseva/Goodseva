@@ -14,7 +14,7 @@ export default function Lp3() {
     >
       <Row gutter={[16, 16]}>
         <Col lg={2}></Col>
-        <Col xs={24} sm={20} md={10} lg={9}>
+        <Col xs={24} sm={20} md={24} lg={9}>
           <Image src={lorry} alt="lorry" className="Lp2-Left_img" />
         </Col>
         <Col lg={2}></Col>

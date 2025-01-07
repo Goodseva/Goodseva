@@ -5,7 +5,7 @@ import pic from "../../../../public/profile.png";
 
 export default function ProfileDetails() {
   return (
-    <Row>
+    <Row style={{ padding: 25 }}>
       <Col lg={20}>
         <Flex vertical gap={20}>
           <Row>

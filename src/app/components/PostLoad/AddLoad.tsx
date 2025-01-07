@@ -60,7 +60,7 @@ export default function AddLoad() {
     },
   ];
   return (
-    <Flex vertical gap={15}>
+    <Flex vertical gap={15} style={{ padding: 25 }}>
       <Flex vertical gap={10}>
         <Typography.Text id="main-head">Post a Load</Typography.Text>
         <Typography.Text id="upload-text">
@@ -81,8 +81,8 @@ export default function AddLoad() {
                 <path
                   d="M21 3H9C8.20435 3 7.44129 3.31607 6.87868 3.87868C6.31607 4.44129 6 5.20435 6 6V30C6 30.7956 6.31607 31.5587 6.87868 32.1213C7.44129 32.6839 8.20435 33 9 33H27C27.7956 33 28.5587 32.6839 29.1213 32.1213C29.6839 31.5587 30 30.7956 30 30V12M21 3L30 12M21 3V12H30M24 19.5H12M24 25.5H12M15 13.5H12"
                   stroke="white"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>

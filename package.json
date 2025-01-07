@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.2",
+    "@react-google-maps/api": "^2.20.5",
     "antd": "^5.22.5",
     "good-seva": "file:",
     "next": "^15.1.3",

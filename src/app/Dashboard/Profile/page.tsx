@@ -36,7 +36,7 @@ export default function Profile() {
     },
   ];
   return (
-    <div>
+    <div style={{ padding: 25 }}>
       <Typography.Text style={{ fontSize: 20, fontWeight: 600 }}>
         Profile
       </Typography.Text>

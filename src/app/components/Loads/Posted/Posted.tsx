@@ -112,20 +112,20 @@ export default function Posted() {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g clip-path="url(#clip0_918_39504)">
+                        <g clipPath="url(#clip0_918_39504)">
                           <path
                             d="M0.833008 10.009C0.833008 10.009 4.16634 3.34229 9.99967 3.34229C15.833 3.34229 19.1663 10.009 19.1663 10.009C19.1663 10.009 15.833 16.6756 9.99967 16.6756C4.16634 16.6756 0.833008 10.009 0.833008 10.009Z"
                             stroke="#8205AF"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           />
                           <path
                             d="M9.99967 12.509C11.3804 12.509 12.4997 11.3897 12.4997 10.009C12.4997 8.62824 11.3804 7.50895 9.99967 7.50895C8.61896 7.50895 7.49967 8.62824 7.49967 10.009C7.49967 11.3897 8.61896 12.509 9.99967 12.509Z"
                             stroke="#8205AF"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           />
                         </g>
                         <defs>

@@ -52,7 +52,7 @@ const hyderabad = {
 
 export default function LoadsView() {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCZM8vvHQcztp-iIdX7qhlgdfhM8wHVqn8",
+    googleMapsApiKey: "AIzaSyAgzCejnu8uKDf9nyeo5y_UsO2TSY_21xc",
   });
 
   if (loadError) return <div>Error loading map</div>;

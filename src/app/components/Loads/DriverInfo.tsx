@@ -7,7 +7,7 @@ import styles from "../../styles/LoadView.module.css";
 const onChange = (key: string) => {
   console.log(key);
 };
-type Align = "start" | "center" | "end";
+
 const items: TabsProps["items"] = [
   { key: "1", label: "Driver Info", children: <DriverInfo /> },
   { key: "2", label: "Load Details", children: "Content of Tab Pane 2" },
@@ -115,7 +115,7 @@ function DriverInfo() {
         </Flex>
         <Flex vertical>
           <Typography.Text className={styles.FromLocation}>
-            Driver's License
+            Drivers License
           </Typography.Text>
           <Typography.Text>{driverDetails.DriversLicense}</Typography.Text>
         </Flex>

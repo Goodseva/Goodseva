@@ -47,7 +47,9 @@ const items: TabsProps["items"] = [
 export default function Loads() {
   return (
     <div style={{ padding: 20 }}>
-      <Typography.Text>Loads</Typography.Text>
+      <Typography.Text style={{ fontSize: 20, fontWeight: 600 }}>
+        Loads
+      </Typography.Text>
       <Tabs
         defaultActiveKey="1"
         items={items}

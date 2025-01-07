@@ -5,9 +5,9 @@ export default function Posted() {
   return (
     <Row>
       <Flex vertical style={{ width: "100%" }} gap={10}>
-        {new Array(3).fill("").map((e) => {
+        {new Array(3).fill("").map((_, index) => {
           return (
-            <Flex >
+            <Flex key={index}>
               <Col lg={24}>
                 <Flex
                   justify="space-between"

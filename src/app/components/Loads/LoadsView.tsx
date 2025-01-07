@@ -196,7 +196,7 @@ export default function LoadsView() {
           </Flex>
         </Col>
 
-        <Col lg={18}>
+        <Col lg={18} md={24} sm={24}>
           <div style={{ width: "100%", height: "100%", position: "relative" }}>
             <GoogleMap
               mapContainerStyle={{ width: "100%", height: "100%" }}

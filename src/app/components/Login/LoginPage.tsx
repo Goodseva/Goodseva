@@ -15,8 +15,10 @@ import {
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function LoginPage() {
+  const [number, setNumber] = useState("");
   return (
     <div className="bg-lp">
       <div>
@@ -116,6 +118,9 @@ export default function LoginPage() {
                 placeholder="Enter your Registered Phone Number/Email"
                 prefix={<MobileOutlined />}
                 className="input-login"
+                type="number"
+                value={number}
+                onChange={(e) => setNumber(e.target.value)}
               />
               <Link href={"/Login/otp"}>
                 <Button id="otp-button">Get OTP</Button>

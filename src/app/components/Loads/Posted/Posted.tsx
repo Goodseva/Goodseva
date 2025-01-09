@@ -103,7 +103,7 @@ export default function Posted() {
                     </Typography.Text>
                     <Typography.Text>12-11-24</Typography.Text>
                   </Flex>
-                  <Link href={"/Dashboard/Loads/Trips"}>
+                  <Link href={"/dashboard/loads/trips"}>
                     <Button>
                       <svg
                         width="20"

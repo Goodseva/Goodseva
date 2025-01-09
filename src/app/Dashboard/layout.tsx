@@ -7,11 +7,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
- 
   const [selected, setSelected] = useState<string | null>(null);
   const navbarData1 = [
     {
-      link: "/Dashboard/",
+      link: "/dashboard/",
       icon: (isSelected: boolean) => (
         <svg
           width="25"
@@ -38,7 +37,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       name: "Dashboard",
     },
     {
-      link: "/Dashboard/Profile",
+      link: "/dashboard/profile",
       icon: (isSelected: boolean) => (
         <svg
           width="25"
@@ -62,7 +61,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const navbarData2 = [
     {
-      link: "/Dashboard/Actions",
+      link: "/dashboard/actions",
       icon: (isSelected: boolean) => (
         <svg
           width="24"
@@ -144,7 +143,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       name: "Actions Needed",
     },
     {
-      link: "/Dashboard/Loads",
+      link: "/dashboard/loads",
       icon: (isSelected: boolean) => (
         <svg
           width="24"
@@ -189,7 +188,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       name: "Loads",
     },
     {
-      link: "/Dashboard/PostLoad",
+      link: "/dashboard/postLoad",
       icon: (isSelected: boolean) => (
         <svg
           width="24"
@@ -234,7 +233,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       name: "Post a Load",
     },
     {
-      link: "/Dashboard/ReportsAnalytics",
+      link: "/dashboard/reportsanalytics",
       icon: (isSelected: boolean) => (
         <svg
           width="24"
@@ -657,10 +656,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             ></Col>
           </Row>
           <Row>
-            <Col
-              lg={24}
-              style={{ width: "100%", height: "auto"}}
-            >
+            <Col lg={24} style={{ width: "100%", height: "auto" }}>
               {children}
             </Col>
           </Row>

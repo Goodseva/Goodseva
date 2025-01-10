@@ -111,9 +111,9 @@ export default function LoginOtp() {
       </Row>
       <div className="bg-register-card">
         <Row>
-          <Col sm={24} lg={8} xs={24}></Col>
+          <Col sm={0} lg={8} xs={0}></Col>
 
-          <Col sm={10} className="bg-lp-div" lg={8}>
+          <Col sm={24} className="bg-lp-div" lg={8} xs={24}>
             <Flex
               justify="space-between"
               style={{
@@ -134,24 +134,26 @@ export default function LoginOtp() {
               Very good works are waiting for you
             </Typography.Title>
 
-            <Flex className="input-details" vertical>
-              <Flex align="flex-start" vertical justify="center">
-                <Input.OTP
-                  {...sharedProps}
-                  mask="*"
-                  size="large"
-                  id="otp-inputs"
-                />
-              </Flex>
-              <Flex justify="center" style={{ padding: 20 }} gap={50}>
-                <Link
-                  href="/Register"
-                  id="link-to-register"
-                  style={{ color: "#7F1126" }}
-                >
-                  Change Email/Phone number
-                </Link>
-                <Button id="otp-button">Verify</Button>
+            <Flex className="input-details" vertical >
+              <Flex vertical style={{margin:30}}>
+                <Flex align="flex-start" vertical justify="center">
+                  <Input.OTP
+                    {...sharedProps}
+                    mask="*"
+                    size="large"
+                    id="otp-inputs"
+                  />
+                </Flex>
+                <Flex justify="center" style={{ padding: 20 }} gap={50}>
+                  <Link
+                    href="/Register"
+                    id="link-to-register"
+                    style={{ color: "#7F1126" }}
+                  >
+                    Change Email/Phone number
+                  </Link>
+                  <Button id="otp-button">Verify</Button>
+                </Flex>
               </Flex>
             </Flex>
             <div className="providers">
@@ -172,11 +174,11 @@ export default function LoginOtp() {
               </Flex>
             </div>
           </Col>
-          <Col lg={4} sm={0}></Col>
+          <Col lg={4} sm={0} xs={0}></Col>
         </Row>
       </div>
       <Row>
-        <Col lg={24} style={{ width: "100%", height: 50 }}></Col>
+        <Col lg={24} style={{ width: "100%", height: 50 }} sm={0} xs={0}></Col>
       </Row>
     </div>
   );

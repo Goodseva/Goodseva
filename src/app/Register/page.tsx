@@ -140,7 +140,7 @@ export default function RegisterPage() {
                   setMail(e.target.value);
                 }}
               />
-              <Link href={`/Register/${mobileNo}/step1`}>
+              <Link href={`/register/${mobileNo}/step1`}>
                 <Button id="otp-button">Get OTP</Button>
               </Link>
             </Flex>

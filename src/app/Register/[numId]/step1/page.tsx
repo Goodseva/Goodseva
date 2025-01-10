@@ -134,7 +134,7 @@ export default function Step1() {
             </Typography.Title>
 
             <Flex vertical gap={30} className="company-div">
-              <Link href={`/Register/${params.numId}/step1/Company/step2`}>
+              <Link href={`/register/${params.numId}/step1/Company/step2`}>
                 <Button
                   icon={
                     <svg
@@ -160,7 +160,7 @@ export default function Step1() {
                 </Button>
               </Link>
 
-              <Link href={`/Register/${params.numId}/step1/Personal/step2`}>
+              <Link href={`/register/${params.numId}/step1/Personal/step2`}>
                 <Button
                   icon={
                     <svg

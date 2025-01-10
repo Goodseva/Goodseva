@@ -5,8 +5,8 @@ import { Tabs, Typography } from "antd";
 import type { TabsProps } from "antd";
 import dynamic from "next/dynamic";
 
-const Drafts = dynamic(() => import("@/app/components/Loads/Drafts/Drafts"));
-const Posted = dynamic(() => import("@/app/components/Loads/Posted/Posted"));
+const Drafts = dynamic(() => import("@/app/components/loads/drafts/Drafts"));
+const Posted = dynamic(() => import("@/app/components/loads/posted/Posted"));
 
 const onChange = (key: string) => {
   console.log(key);

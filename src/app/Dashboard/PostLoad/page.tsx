@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 
-const AddLoad = dynamic(() => import("../../components/PostLoad/AddLoad"));
+const AddLoad = dynamic(() => import("../../components/postload/AddLoad"));
 export default function PostLoad() {
   return <AddLoad />;
 }

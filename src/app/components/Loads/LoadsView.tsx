@@ -196,10 +196,10 @@ export default function LoadsView() {
           </Flex>
         </Col>
 
-        <Col lg={18} md={24} sm={24}>
-          <div style={{ width: "100%", height: "100%", position: "relative" }}>
+        <Col lg={18} md={24} sm={24} style={{ position: "relative" }}>
+          <Flex style={{ width: "100%", height: "100%" }} >
             <GoogleMap
-              mapContainerStyle={{ width: "100%", height: "100%" }}
+              mapContainerStyle={{ width: "100%", height: "90vh" }}
               center={visakhapatnam}
               zoom={7}
             >
@@ -224,14 +224,14 @@ export default function LoadsView() {
                 backgroundColor: "white",
                 width: "96%",
                 padding: 20,
-                margin:20,
+                margin: 20,
                 border: "1px solid #FFFFFF",
                 borderRadius: 8,
               }}
             >
               <Driver />
             </div>
-          </div>
+          </Flex>
         </Col>
       </Row>
     </>

@@ -5,7 +5,7 @@ import { Col, Row, Tabs, Typography } from "antd";
 import type { TabsProps } from "antd";
 
 const UserProfile = dynamic(
-  () => import("../../components/Profile/ProfileDetails")
+  () => import("../../components/profile/ProfileDetails")
 );
 
 export default function Profile() {

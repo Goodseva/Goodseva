@@ -158,7 +158,7 @@ export default function Step2() {
 
             <Flex vertical gap={30} className="company-div-step2">
               <Link
-                href={`/Register/${params.numId}/step1/${params.cType}/step2/Corporate/step3`}
+                href={`/register/${params.numId}/step1/${params.cType}/step2/Corporate/step3`}
               >
                 <Button
                   style={{
@@ -171,7 +171,7 @@ export default function Step2() {
                 </Button>
               </Link>
               <Link
-                href={`/Register/${params.numId}/step1/${params.cType}/step2/Ecom/step3`}
+                href={`/register/${params.numId}/step1/${params.cType}/step2/Ecom/step3`}
               >
                 <Button
                   style={{
@@ -184,7 +184,7 @@ export default function Step2() {
                 </Button>
               </Link>
               <Link
-                href={`/Register/${params.numId}/step1/${params.cType}/step2/Export/step3`}
+                href={`/register/${params.numId}/step1/${params.cType}/step2/Export/step3`}
               >
                 <Button
                   style={{

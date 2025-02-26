@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.2",
-    "@prisma/client": "^6.1.0",
+    "@prisma/client": "^6.4.1",
     "@react-google-maps/api": "^2.20.5",
     "antd": "^5.22.5",
+    "axios": "^1.7.9",
     "good-seva": "file:",
     "next": "^15.1.3",
     "react": "^19.0.0",

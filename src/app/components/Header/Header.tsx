@@ -69,10 +69,10 @@ export default function Header() {
                 // enterButton={<SearchOutlined style={{backgroundColor:"transparent"}}/>} // Adds the search icon as a button
                 style={{ width: 300, padding: 10 }} // Customize width and height
               />
-              <Link href={"/login"}>
+              <Link href={"/Login"}>
                 <Button className="nav-button1">Login</Button>
               </Link>
-              <Link href={"/register"}>
+              <Link href={"/Register"}>
                 <Button className="nav-button2">Get Started</Button>
               </Link>
             </Flex>

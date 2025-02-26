@@ -1,39 +1,38 @@
 "use client";
 import "../styles/RegisterPage.css";
 import { MailOutlined, MobileOutlined } from "@ant-design/icons";
-import {
-  Button,
-  Col,
-  Divider,
-  Flex,
-  Input,
-  Row,
-  Space,
-  Typography,
-} from "antd";
+import {  Button,  Col,  Divider,  Flex,  Input,  Row,  Space,  Typography,} from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import googleicon from "../../../public/google.png";
 import fbicon from "../../../public/fb.png";
+import axios from 'axios';
 
 export default function RegisterPage() {
   const [mobileNo, setMobileNo] = useState("");
   const [mail, setMail] = useState("");
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+    console.log(name,email,phone);
+    try {
+      const response = await axios.post('/api/drivers', { name, email, phone });
+      alert('Driver created successfully!');
+      console.log(response.data);
+    } catch (error) {
+      console.error('Error creating driver:', error);
+      alert('Failed to create driver');
+    }
+  };
+
   return (
     <div className="main-register">
       <Row>
-        <Col
-          lg={24}
-          style={{
-            backgroundColor: "black",
-            color: "white",
-            fontSize: 14,
-            fontWeight: 400,
-          }}
-          sm={24}
-          xs={24}
-        >
+        <Col lg={24} style={{ backgroundColor: "black", color: "white", fontSize: 14, fontWeight: 400, }} sm={24} xs={24} >
           <Flex justify="center">
             <Space className="header-number">
               <svg
@@ -109,7 +108,10 @@ export default function RegisterPage() {
                 borderColor: "#B0B0B0",
               }}
             >
-              <Typography.Title id="offeringTxt">goodSeva</Typography.Title>
+              <Link href={"/home"}>
+                {" "}
+                <Typography.Title id="offeringTxt">goodSeva</Typography.Title>
+              </Link>
               <Typography.Title level={2} id="Text-Register">
                 REGISTER
               </Typography.Title>
@@ -119,6 +121,31 @@ export default function RegisterPage() {
               Very good works are waiting for you
             </Typography.Title>
             <Flex className="input-details" vertical gap={30} align="flex-end">
+            <h1>Create Driver</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="tel"
+          placeholder="Phone"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          required
+        />
+        <button type="submit">Create Driver</button>
+      </form>
               <Input
                 size="large"
                 placeholder=" Mobile Number"

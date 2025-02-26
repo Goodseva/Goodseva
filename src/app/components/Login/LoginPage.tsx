@@ -102,9 +102,10 @@ export default function LoginPage() {
               borderColor: "#B0B0B0",
             }}
           >
+            <Link href={"/home"}>
             <Typography.Title id="offeringTxt" style={{}}>
               goodSeva
-            </Typography.Title>
+            </Typography.Title></Link>
             <Typography.Title id="login-text">LOGIN</Typography.Title>
           </Flex>
 
@@ -114,14 +115,14 @@ export default function LoginPage() {
           <div className="input-details">
             <Input
               size="large"
-              placeholder="Enter your Registered Phone Number/Email"
+              placeholder="RedEnter your Registered Phone Number/Email"
               prefix={<MobileOutlined />}
               className="input-login"
               type="number"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
             />
-            <Link href={"/login/otp"}>
+            <Link href={"/Login/otp"}>
               <Button id="otp-button">Get OTP</Button>
             </Link>
           </div>

@@ -131,7 +131,7 @@ export default function LoginOtp() {
               </Typography.Title>
             </Flex>
             <Typography.Title level={3} id="otp-above-text">
-              Very good works are waiting for you
+              Very good works are waiting for you 
             </Typography.Title>
 
             <Flex className="input-details" vertical >
@@ -152,7 +152,7 @@ export default function LoginOtp() {
                   >
                     Change Email/Phone number
                   </Link>
-                  <Button id="otp-button">Verify</Button>
+                  <Link href={"/Dashboard"}><Button id="otp-button">Verify</Button></Link> 
                 </Flex>
               </Flex>
             </Flex>

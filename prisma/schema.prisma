@@ -13,6 +13,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Order {
+  id             Int      @id @default(autoincrement())
+  customerName   String
+  customerPhone  String
+  pickupAddress  String
+  dropoffAddress String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
 model User {
   Id        Int      @id @default(autoincrement())
   Email     String   @unique
@@ -56,16 +66,18 @@ model Company_user {
 model Driver {
   Id                   Int                @id @default(autoincrement())
   Logistics            Logistics_Comapany @relation(fields: [Logistics_company_Id], references: [Id])
-  Logistics_company_Id Int
-  First_Name           String
-  Last_Name            String
-  License_Number       String
-  Insurance            String?
-  Phone                Int
-  Email                String
-  CreatedAt            DateTime           @default(now())
-  Truck                Truck[]
-  Assignment           Assignment[]
+   Logistics_company_Id Int
+   First_Name           String
+   Last_Name            String
+   License_Number       String
+   Insurance            String?
+   Phone                Int
+   Email                String
+   CreatedAt            DateTime           @default(now())
+   updatedAt            DateTime           @updatedAt
+   Truck                Truck[]
+   Assignment           Assignment[]
+   
 }
 
 model Truck {

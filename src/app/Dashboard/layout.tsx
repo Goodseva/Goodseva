@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [selected, setSelected] = useState<string | null>(null);
   const navbarData1 = [
     {
-      link: "/dashboard/",
+      link: "/Dashboard/",
       icon: (isSelected: boolean) => (
         <svg
           width="25"
@@ -37,7 +37,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       name: "Dashboard",
     },
     {
-      link: "/dashboard/profile",
+      link: "/Dashboard/Profile",
       icon: (isSelected: boolean) => (
         <svg
           width="25"
@@ -61,7 +61,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const navbarData2 = [
     {
-      link: "/dashboard/actions",
+      link: "/Dashboard/Actions",
       icon: (isSelected: boolean) => (
         <svg
           width="24"
@@ -143,7 +143,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       name: "Actions Needed",
     },
     {
-      link: "/dashboard/loads",
+      link: "/Dashboard/Loads",
       icon: (isSelected: boolean) => (
         <svg
           width="24"
@@ -188,7 +188,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       name: "Loads",
     },
     {
-      link: "/dashboard/postLoad",
+      link: "/Dashboard/PostLoad",
       icon: (isSelected: boolean) => (
         <svg
           width="24"
@@ -233,7 +233,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       name: "Post a Load",
     },
     {
-      link: "/dashboard/reportsanalytics",
+      link: "/Dashboard/ReportsAnalytics",
       icon: (isSelected: boolean) => (
         <svg
           width="24"
@@ -492,7 +492,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <Col lg={4} className="navbar-bg">
           <Flex vertical gap={15}>
             <div>
-              <Typography.Title id="navbar-Title">goodSeva</Typography.Title>
+              <Link href={"/"}><Typography.Title id="navbar-Title">goodSeva</Typography.Title></Link>
+             
             </div>
             <Flex vertical gap={30}>
               <Typography.Text style={{ color: "#B0B0B0" }} id="nav-text">
@@ -599,7 +600,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         <Col
           lg={20}
-          style={{ width: "100%", height: "100%", backgroundColor: "white" }}
+          style={{ width: "100%", minHeight: "100%", backgroundColor: "white" }}
         >
           <Flex style={{ padding: 20 }}>
             <Flex justify="space-between" style={{ width: "100%" }}>
@@ -656,7 +657,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             ></Col>
           </Row>
           <Row>
-            <Col lg={24} style={{ width: "100%", height: "auto" }}>
+            <Col lg={24} style={{ width: "100%",padding:"20px ", height: "auto" }}>
               {children}
             </Col>
           </Row>
